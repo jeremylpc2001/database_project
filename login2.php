@@ -26,17 +26,47 @@
 			$_SESSION['password'] = $row[1];
 			$_SESSION['name'] = $row[2];
 			if($row[3] == 1)
-				$_SESSION['occupation'] = "醫生";
+				$_SESSION['hospital'] = "成大醫院";
 			elseif($row[3] == 2)
-				$_SESSION['occupation'] = "護理師";
+				$_SESSION['hospital'] = "臺大醫院";
 			elseif($row[3] == 3)
+				$_SESSION['hospital'] = "新樓醫院";
+			elseif($row[3] == 4)
+				$_SESSION['hospital'] = "新光醫院";
+				
+			if($row[4] == 1)
+				$_SESSION['department'] = "小兒科";
+			elseif($row[4] == 2)
+				$_SESSION['department'] = "眼科";
+			elseif($row[4] == 3)
+				$_SESSION['department'] = "骨科";
+			elseif($row[4] == 4)
+				$_SESSION['department'] = "胸腔科";
+			elseif($row[4] == 5)
+				$_SESSION['department'] = "耳鼻喉科";
+			elseif($row[4] == 6)
+				$_SESSION['department'] = "內科";
+			elseif($row[4] == 7)
+				$_SESSION['department'] = "婦產科";
+			elseif($row[4] == 8)
+				$_SESSION['department'] = "皮膚科";
+			elseif($row[4] == 9)
+				$_SESSION['department'] = "牙科";
+			elseif($row[4] == 10)
+				$_SESSION['department'] = "藥局";
+
+			if($row[5] == 1)
+				$_SESSION['occupation'] = "醫生";
+			elseif($row[5] == 2)
+				$_SESSION['occupation'] = "護理師";
+			elseif($row[5] == 3)
 				$_SESSION['occupation'] = "藥師";
 		
-			if($row[3] == 1)
+			if($row[5] == 1)
 				header('Location:display1.php');
-			elseif($row[3] == 2)
+			elseif($row[5] == 2)
 				header('Location:display2.php');
-			elseif($row[3] == 3)
+			elseif($row[5] == 3)
 				header('Location:display3.php');
 			
 		}

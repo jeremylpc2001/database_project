@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>新增病例</title>
+</head>
+<body>
+	<a href="login1.html"><img src="logo.png" style="width:400px;height:130px"></a>
+	<br>
+	<img src="banner.jpg" style="width:1510px;height:105px">
+	
+	<form action="create.php" method="post">
+        <table align="center" bgcolor="#FFCC99">
+        	<tr>
+        		<td><font size="2">病例ID:</font></td>
+                <td><input type="text" name="id" size="15" /></td>
+        	</tr>
+			<tr>
+        		<td><font size="2">病患ID:</font></td>
+                <td><input type="text" name="patient" size="15" /></td>
+        	</tr>
+        	<tr>
+        		<td><font size="2">醫院ID:</font></td>
+                <td><input type="text" name="hospital" size="15" /></td>
+        	</tr>
+        	<tr>
+        		<td><font size="2">醫生ID:</font></td>
+                <td><input type="text" name="doctor" size="15" /></td>
+        	</tr>
+        	<tr>
+        		<td><font size="2">部門ID:</font></td>
+                <td><input type="text" name="department" size="15" /></td>
+        	</tr>
+        	<tr>
+        		<td><font size="2">症狀:</font></td>
+                <td><input type="text" name="symptom" size="15" /></td>
+        	</tr>
+        	<tr>
+        		<td><font size="2">診斷:</font></td>
+                <td><input type="text" name="diagnose" size="15" /></td>
+        	</tr>
+        	<tr>
+        		<td><font size="2">用藥:</font></td>
+                <td><input type="text" name="medicine" size="15" /></td>
+        	</tr>
+        	<tr>
+        		<td><font size="2">複診:</font></td>
+                <td><input type="text" name="followup" size="15" /></td>
+        	</tr>
+        	<tr>
+        		<td><font size="2">日期:</font></td>
+                <td><input type="date" name="mdate" size="15" /></td>
+        	</tr>
+        	<tr>
+                <td colspan="2" align="center"><input type="submit" value="新增"/></td>
+            </tr>
+		</table>
+	</form>
+</body>
+</html>

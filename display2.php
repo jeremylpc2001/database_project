@@ -33,6 +33,14 @@
 				<td width="84%"><input type="text" name="name" size="15" value = "<?php echo $_SESSION["name"] ?>" maxlength="10"></td>
 			</tr>
 			<tr>
+				<td width="16%" align="right">服務院所:</td>
+				<td width="84%"><input type="text" name="hospital" size="15" value = "<?php echo $_SESSION["hospital"] ?>"  maxlength="10"/ readonly="readonly"/></td>
+			</tr>
+			<tr>
+				<td width="16%" align="right">單位:</td>
+				<td width="84%"><input type="text" name="department" size="15" value = "<?php echo $_SESSION["department"] ?>"  maxlength="10"/ readonly="readonly"/></td>
+			</tr>
+			<tr>
 				<td width="16%" align="right">職業:</td>
 				<td width="84%"><input type="text" name="occupation" size="15" value = "<?php echo $_SESSION["occupation"] ?>"  maxlength="10"/ readonly="readonly"/></td>
 			</tr>
