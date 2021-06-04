@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = 'UTF-8'>
+	<title>電子病歷系統-醫護人員登入</title>
+</head>
+<body>
+	<a href="login1.html"><img src="logo.png" style="width:400px;height:130px"></a>
+	<br>
+	<img src="banner.jpg" style="width:1510px;height:105px">
+	
+	<form action="login2.php" method="post">
+        <table align="center" bgcolor="#FFCC99">
+            <tr>
+                <td><font size="2">身分證字號:</font></td>
+                <td><input type="text" name="id" size="15" /></td>
+            </tr>
+            <tr>
+                <td><font size="2">密碼:</font></td>
+                <td><input type="password" name="password" size="15" /></td>
+            </tr>
+			<tr>
+                <td><font size="2">職業:</font></td>
+                <td>    
+					<select name="occupation" type = "text">
+                        <option value="1">醫生</option>
+                        <option value="2">護理師</option>
+                        <option value="3">藥師</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="登入"/></td>
+            </tr>
+		</table>
+    </form>
+
+</body>
+</html>
